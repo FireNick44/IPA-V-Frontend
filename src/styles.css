@@ -1,0 +1,88 @@
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.app-container {
+  height: 100vh; /* 100% viewport height */
+  display: flex;
+}
+
+mat-sidenav {
+  min-width: 240px; /* Adjust the width as needed */
+}
+
+mat-sidenav-content {
+  flex: 1; /* Take up remaining space */
+  overflow: auto; /* Add scrollbars if content overflows */
+}
+
+mat-sidenav-container {
+  flex: 1 !important;
+  height: calc(100% - 124px) !important;
+  width: auto !important;
+  overflow: hidden !important;
+}
+
+mat-list-item {
+  cursor: pointer !important;
+}
+
+mat-list-item mat-icon {
+  transform: translateY(5px);
+}
+
+.mdc-list{
+  padding: 0 !important;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.footer p {
+  margin: 0!important;
+}
+
+.footer .github-link{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.map-svg circle {
+  fill: #000000; /* Fill color for the circles */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+  transition: fill 0.3s; /* Add a smooth color transition on hover */
+}
+
+.map-svg circle:hover {
+  fill: #444444; /* Change the fill color on hover */
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-card {
+  margin: 25px;
+}
+
+.overview-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overview-chart{
+  margin: auto;
+  width: calc(100% - 240px);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

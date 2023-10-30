@@ -1,0 +1,22 @@
+<app-header (openSidenavEvent)="toggleSidenav()"></app-header>
+<mat-sidenav-container class="app-container">
+  <mat-sidenav mode="side" #sidenav>
+    <mat-list>
+      <mat-list-item routerLink="/" routerLinkActive="active">
+        <mat-icon>home</mat-icon> Overview
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item routerLink="/dashboard" routerLinkActive="active">
+        <mat-icon>dashboard</mat-icon> Dashboard
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item routerLink="/transaction" routerLinkActive="active">
+        <mat-icon>receipt</mat-icon> Transaction
+      </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<app-footer></app-footer>
